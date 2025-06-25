@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Greater Manchester Mayors</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      margin: 0;
+      background: #f5f5f5;
       color: #222;
-      line-height: 1.6;
     }
 
     header {
       background: #003366;
       color: white;
-      padding: 1em;
       text-align: center;
+      padding: 1.5em 1em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8em;
     }
 
     .container {
@@ -26,43 +30,43 @@
       padding: 1em;
     }
 
-    .mayor {
+    .mayor-card {
       background: white;
       margin-bottom: 1.5em;
       border-radius: 10px;
-      overflow: hidden;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
       display: flex;
       flex-direction: column;
     }
 
-    .mayor img {
+    .mayor-card img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
 
-    .mayor-content {
+    .mayor-info {
       padding: 1em;
     }
 
-    .mayor h2 {
-      margin-top: 0;
+    .mayor-info h2 {
+      margin: 0 0 0.5em;
       color: #003366;
+      font-size: 1.2em;
     }
 
     @media (min-width: 600px) {
-      .mayor {
+      .mayor-card {
         flex-direction: row;
       }
 
-      .mayor img {
+      .mayor-card img {
         width: 250px;
         height: auto;
-        border-right: 1px solid #eee;
       }
 
-      .mayor-content {
+      .mayor-info {
         flex: 1;
       }
     }
@@ -71,31 +75,89 @@
 <body>
 
 <header>
-  <h1>Greater Manchester Ceremonial Mayors</h1>
+  <h1>Greater Manchester Mayors</h1>
 </header>
 
 <div class="container">
-
-  <div class="mayor">
-    <img src="images/mayor1.jpg" alt="Mayor of Manchester">
-    <div class="mayor-content">
-      <h2>Manchester - Cllr Jane Doe</h2>
-      <p>Consort: Mr John Doe</p>
-      <p>Jane has served Manchester for over 20 years...</p>
+  <div class="mayor-card">
+    <img src="images/image3.png" alt="Carmine & Elaine Grimshaw">
+    <div class="mayor-info">
+      <h2>Manchester</h2>
+      <p>Carmine Grimshaw & Elaine Grimshaw</p>
     </div>
   </div>
 
-  <div class="mayor">
-    <img src="images/mayor2.jpg" alt="Mayor of Salford">
-    <div class="mayor-content">
-      <h2>Salford - Cllr Alex Smith</h2>
-      <p>Consort: Mrs Maria Smith</p>
-      <p>Alex brings a rich background in community service...</p>
+  <div class="mayor-card">
+    <img src="images/image7.png" alt="Jane & John Brophy">
+    <div class="mayor-info">
+      <h2>Trafford</h2>
+      <p>Jane Brophy & John Brophy</p>
     </div>
   </div>
 
-  <!-- Add more mayor blocks similarly -->
+  <div class="mayor-card">
+    <img src="images/image1.png" alt="Heather Fletcher & Max Jacobs">
+    <div class="mayor-info">
+      <h2>Salford</h2>
+      <p>Heather Fletcher & Max Jacobs</p>
+    </div>
+  </div>
 
+  <div class="mayor-card">
+    <img src="images/image4.png" alt="Jenny & Andrew Bullen">
+    <div class="mayor-info">
+      <h2>Wigan</h2>
+      <p>Jenny Bullen & Andrew Bullen</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image10.png" alt="David, Valerie & Victoria Chadwick">
+    <div class="mayor-info">
+      <h2>Bolton</h2>
+      <p>David Chadwick, Valerie & Victoria</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image8.png" alt="Noel Bayley, Gill Campbell, Elliot Moss">
+    <div class="mayor-info">
+      <h2>Bury</h2>
+      <p>Noel Bayley, Gill Campbell (& Elliot Moss)</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image6.png" alt="Eddie & Kath Moores">
+    <div class="mayor-info">
+      <h2>Oldham</h2>
+      <p>Eddie Moores (& Kath Moores)</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image9.png" alt="Shibley & Mohammed Khairul Alam">
+    <div class="mayor-info">
+      <h2>Tameside</h2>
+      <p>Shibley Alam & Mohammed Khairul Alam</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image2.png" alt="Kerry Waters & Wendy Nadin">
+    <div class="mayor-info">
+      <h2>Stockport</h2>
+      <p>Kerry Waters & Wendy Nadin</p>
+    </div>
+  </div>
+
+  <div class="mayor-card">
+    <img src="images/image5.png" alt="Janet & Ken Emsley">
+    <div class="mayor-info">
+      <h2>Rochdale</h2>
+      <p>Janet Emsley & Ken Emsley</p>
+    </div>
+  </div>
 </div>
 
 </body>
